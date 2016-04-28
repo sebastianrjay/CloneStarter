@@ -1,0 +1,92 @@
+// Place all the styles related to the Sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.log-in-background {
+	background: #f7fafa;
+	padding: 60px;
+}
+
+div.log-in {
+	margin: auto;
+	border: 1px solid #d9d9de;
+	border-radius: 5px;
+	background: #fff;
+	padding: 20px 20px 80px 20px;
+	width: 350px;
+}
+
+div.log-in > h1 {
+	padding-bottom: 30px;
+	font-weight: 200;
+	font-size: 32px;
+	line-height: 40px;
+}
+
+div.log-in > a {
+	padding: 15px 105px;
+	background: #3b5998;
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 40px;
+	transition: all 0.2s ease-in-out;
+	text-align: center;
+	border-radius: 5px;
+}
+
+div.log-in > a:hover {
+	background: #30487b;
+}
+
+div.log-in > h6 {
+	padding: 30px 0;
+	margin: auto;
+	text-align: center;
+	width: 200px;
+	font-size: 12px;
+	color: #828587;
+}
+
+div.log-in > p {
+	text-align: center;
+	color: #828587;
+}
+
+div.log-in input[type="text"],
+div.log-in input[type="password"],
+div.log-in input[type="date"],
+div.log-in textarea {
+	margin-top: 20px;
+	padding: 10px;
+	width: 95%;
+	background: white;
+	border: 1px solid #828587;
+	border-radius: 5px;
+}
+
+div.log-in input[type="text"]:focus,
+div.log-in input[type="password"]:focus,
+div.log-in input[type="date"]:focus,
+div.log-in textarea:focus {
+  border: 1px solid #148BF8;
+  transition-delay: 0.5s;
+}
+
+div.log-in input[type="submit"],
+div.project-form-container input[type="submit"] {
+	padding: 0 20px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 40px;
+	margin-top: 25px;
+	border-radius: 6px;
+	background: #0000FF;
+	color: white;
+	transition: all 0.2s ease-in-out;
+}
+
+div.log-in input[type="submit"]:focus,
+div.project-form-container input[type="submit"]:focus {
+	background: #696969;
+}

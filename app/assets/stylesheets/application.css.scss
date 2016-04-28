@@ -1,0 +1,300 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *=
+ */
+
+// @import "bootstrap-sprockets";
+// @import "bootstrap";
+
+html, body, header, footer, section, article, div, a, img, p, h1, h2, h3, h4,
+h5, h6, table, ul, li, strong, form, label, main, td, video,
+button, pre, nav
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.toolbar {
+  border-bottom: 1px solid #D0CFD6;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+  color: #118CF9;
+}
+
+body{
+  font-size:16px;
+}
+
+.error {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 1px solid;
+  margin: 10px 0px;
+  padding:15px 10px 15px 50px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  color: #D8000C;
+  background-color: #FFBABA;
+  background-image: url('../images/error-icon.png');
+}
+
+
+// form.sign-out input[type="submit"] {
+//   display: inline-block;
+//   box-sizing: content-box;
+//   -webkit-appearance: none;
+//   margin: 0;
+//   padding: 0;
+//   border: 0;
+//   outline: 0;
+//   font: inherit;
+//   vertical-align: baseline;
+//   background: transparent;
+//   color: inherit;
+// }
+
+input[type="text"],
+input[type="submit"],
+input[type="password"],
+input[type="file"],
+select,
+input[type="file"]::-webkit-file-upload-button,
+input[type="datetime"],
+button,
+textarea {
+  display: inline-block;
+  box-sizing: content-box;
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  color: inherit;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  cursor: pointer;
+  color: #696969;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  color: #118CF9;
+  background: #E1F3FD;
+}
+
+img {
+}
+
+strong {
+  font-weight: bold;
+}
+
+.badge {
+  display: inline-block;
+  background: #6E7173;
+  color: #fff;
+  border-radius: 5px;
+  margin: auto;
+  font-size: 12px;
+  padding: 4px 8px;
+  font-weight: normal;
+}
+
+.basic-button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  border-radius: 5px;
+  background: white;
+  border: 1px solid #D0CFD6;
+}
+
+.basic-button:hover {
+  background: #E8E8E8;
+  border: 1px solid #B8B8B8;
+}
+
+@font-face {
+    font-family: 'Swiss';
+    src: font-url('Swiss_721.ttf');
+}
+
+@font-face {
+	font-family: "baruta";
+	src: font-url('RNS-B.ttf');
+}
+
+@font-face {
+  font-family: "helvetica-neue-medium";
+  src: font-url('helvetica-neue-medium.ttf');
+}
+
+@font-face {
+  font-family: "helvetica-neue-light";
+  src: font-url('helvetica-neue-light.otf');
+}
+
+body {
+  font-family: helvetica;
+  background: #FFFEFE
+}
+
+/* header */
+
+nav > a {
+	font-size: 28px;
+	font-family: 'baruta';
+}
+
+nav form:hover {
+  background: #F5F8F8;
+  color: #6E7173;
+}
+
+nav > a > p {
+	float: left;
+}
+
+nav {
+	padding: 12px 22px;
+}
+
+nav > div {
+	float: left;
+	margin-left: 25px;
+	padding: 10px;
+}
+
+nav > div > a {
+	color: #6E7173;
+	padding: 23px 17.5px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+nav a.search {
+	border-left: 1px solid #D0CFD6;
+}
+
+.right-nav {
+  padding: 0;
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+
+.right-nav > a {
+  float: left;
+  padding: 23px 9px;
+  color: #108BF9;
+}
+
+.right-nav > form {
+  float: left;
+  color: #108BF9;
+  font-family: "helvetica";
+	font-size: 14px;
+	font-weight: bold;
+  padding: 23px;
+}
+
+.project-main {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.project-main > img {
+  width: 320px;
+  height: 240px;
+  float: left;
+}
+
+.project-main > div {
+  float: left;
+  width: 75%;
+}
+
+.project-main > div > a {
+  padding-left: 20px;
+  float: left;
+  color: #000;
+  font-weight: bold;
+}
+
+.project-main > div > p {
+  float: left;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #76797B;
+}
+
+.project-main > div > span {
+  padding-top: 20px;
+  float: left;
+  padding-left: 20px;
+  font-family: 'helvetica-neue-light';
+  color: #76797B;
+}
+
+.project-main ul {
+  width: 70%;
+}
+
+.project-main li {
+  float: left;
+}
+
+.project-main li > strong {
+  font-size: 16px;
+}
+
+.project-main li > p {
+  color: #6E7173;
+}
+
+.status-bar {
+
+}

@@ -1,0 +1,61 @@
+// Place all the styles related to the Commenters controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.project-comment {
+  padding-left: 20px;
+}
+
+div.comment-form {
+	margin: auto;
+	border: 1px solid #d9d9de;
+	border-radius: 5px;
+	background: #fff;
+	padding: 40px 20px;
+	width: 350px;
+}
+
+div.comment-form > h3 {
+	font-size: 28px;
+}
+
+div.comment-form > p {
+	text-align: center;
+	color: #828587;
+}
+
+div.comment-form input[type="text"],
+div.comment-form input[type="password"],
+div.comment-form input[type="date"],
+div.comment-form textarea {
+	margin-top: 20px;
+	padding: 10px;
+	width: 95%;
+	background: white;
+	border: 1px solid #828587;
+	border-radius: 5px;
+}
+
+div.comment-form input[type="text"]:focus,
+div.comment-form input[type="password"]:focus,
+div.comment-form input[type="date"]:focus,
+div.comment-form textarea:focus {
+  border: 1px solid #148BF8;
+  transition-delay: 0.5s;
+}
+
+div.comment-form input[type="submit"] {
+	padding: 0 20px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 40px;
+	margin-top: 25px;
+	border-radius: 6px;
+	background: #0000FF;
+	color: white;
+	transition: all 0.2s ease-in-out;
+}
+
+div.comment-form input[type="submit"]:focus {
+	background: #696969;
+}

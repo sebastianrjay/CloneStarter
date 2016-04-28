@@ -1,0 +1,14 @@
+<header class="category-header">
+  <h1><%= category.get('name') %></h1>
+</header>
+<section class="kickstarter-items">
+  <% projects.each(function(project) { %>
+    <%= JST['projects/preview']({ project: project }) %>
+  <% }); %>
+  <br>
+  <br>
+</section>
+<br>
+<div "category-back-button">
+  <br><button class='basic-button back'>Back</button><br>
+</div>

@@ -1,0 +1,27 @@
+#clone, #starter {
+  font-weight: bold;
+  font-family: Tahoma;
+}
+
+#clone {
+  color:#000;
+}
+
+#starter, #welcome {
+  color:#0000FF;
+}
+
+#welcome, .toolbar-link {
+  text-decoration: none;
+}
+
+.toolbar-link:hover {
+  background: #F5F8F8;
+  color: #6E7173;
+}
+
+.toolbar:after {
+  display: block;
+  clear: both;
+  content: "";
+}

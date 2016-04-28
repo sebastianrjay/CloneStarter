@@ -1,0 +1,12 @@
+<div class="project-backers-container">
+  <% if(backers.length === 0) { %>
+    <h4>So far, this project has no backers.</h4>
+  <% } else { %>
+    <h4>This project has been backed by the following users:</h4>
+    <% backers.forEach(function(backer) { %>
+      <div class="project-backer">
+        <h6>- <%= backer.username %></h6>
+      </div>
+    <% }); %>
+  <% } %>
+</div>

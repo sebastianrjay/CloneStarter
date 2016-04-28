@@ -1,0 +1,72 @@
+.project-form-container {
+  background: #F8F8F8;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 5%;
+  position: absolute;
+}
+
+.project-form {
+  font-size: 16px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: gray;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: gray;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: gray;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: gray;
+}
+
+.project-form input[type="text"],
+.project-form input[type="date"],
+.project-form textarea, {
+  border: 1px solid #0000FF;
+  padding: 10px;
+  width: 100%;
+}
+
+#new-project-header {
+  padding: 80px 0;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 200;
+}
+
+#new-project-category {
+  font-weight: 100px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+#new-form-category-dropdown {
+  display: inline-table;
+}
+
+.styled-select {
+   width: 240px;
+   height: 34px;
+   overflow: hidden;
+   background: url(http://cdn.bavotasan.com/wp-content/uploads/2011/05/down_arrow_select.jpg) no-repeat right #ddd;
+   border: 1px solid #0000FF;
+   display: inline-block;
+}
+
+.styled-select select {
+   background: transparent;
+   width: 268px;
+   padding: 5px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+}

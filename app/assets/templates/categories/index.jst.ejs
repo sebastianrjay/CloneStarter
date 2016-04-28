@@ -1,0 +1,77 @@
+<div class="box-container">
+  <ul class="floating-boxes">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+  <div class="discover">
+    <h1>Explore an amazing cloning universe!</h1>
+    <h5>We have <%= categories.length %> diverse categories, with a handful of projects.  Bear with us
+      while we try to raise some marketing funding.</h5>
+  </div>
+  <div class="discover-grid group" style="height: 2000px">
+    <% categories.each(function(category){ %>
+    <a href="#/categories/<%= category.id %>"><div class="discover-grid-cell">
+          <div class="subcontainer">
+            <% if(category.escape('num_projects') == 1) { %>
+            <h4>1 live project</h4>
+            <% } else { %>
+            <h4><%= category.escape('num_projects') %> live projects</h4>
+            <% } %>
+            <h2><%= category.escape('name') %></h2>
+          </div>
+        </div></a>
+    <% }); %>
+  </div>
+</div>
+
+<script>
+
+var lastScroll = 0;
+$(document).ready(function () {
+
+  var distanceToTop = [];
+  $("li").each(function (idx) {
+    distanceToTop.push(parseInt($(this).css("top")))
+  });
+
+  $(document).on("scroll", function(event) {
+
+    var offset = $(window).scrollTop();
+    var height = $(document).height();
+    var percentage = ((1 * offset) / height) * 100;
+
+    if (offset === 0) {
+      $("li").each(function (idx) {
+        $(this).css({
+          "top": distanceToTop[idx]
+        })
+      });
+    }
+
+    // We are scrolling down
+    else if (offset < 650 && offset > lastScroll) {
+      $("li").each(function (idx) {
+        $(this).css({
+          "top": parseInt($(this).css("top")) + percentage
+        })
+      });
+    }
+
+    // We are scrolling up
+    else if (offset < 650 && offset < lastScroll) {
+      $("li").each(function (idx) {
+        $(this).css({
+          "top": parseInt($(this).css("top")) - percentage
+        })
+      });
+    }
+
+    lastScroll = offset;
+  });
+});
+</script>

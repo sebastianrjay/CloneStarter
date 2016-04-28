@@ -1,0 +1,14 @@
+<div class="comment-form" >
+
+  <h3>Add a Comment</h3>
+
+  <form method="post" role="form"
+    action= "<%= '/api/projects' + comment.escape('project_id') + '/comments'%>">
+
+    <textarea name='comment[body]' rows="6"><%= comment.escape('body') %></textarea>
+    <br>
+
+    <center><input type="submit" value="Make Comment"></center>
+
+  </form>
+</div>

@@ -1,0 +1,236 @@
+// CSS for small kickstarter item
+
+.kickstarter-item {
+  width: 280px;
+  height: 460px;
+  border: 1px solid #D0CFD6;
+  border-radius: 5px;
+  float: left;
+  margin-right: 1.5%;
+  margin: 20px;
+}
+
+.kickstarter-item img {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.kickstarter-item > div.img {
+  width: 100%;
+  height: 222px;
+  display: block;
+  position:relative;
+  overflow:hidden;
+  float: left;
+  padding: 0;
+}
+
+.kickstarter-item div {
+  float: left;
+  width: 93%;
+  margin: auto;
+  padding: 10px;
+}
+
+.kickstarter-item a {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+  color: #0f2105;
+}
+
+.kickstarter-item a:hover {
+  color: #1E234B;
+}
+
+.kickstarter-item div > p,
+.kickstarter-item div > span,
+.kickstarter-item li > span {
+  color: #6E7173;
+  font-family: helvetica neue;
+  font-weight: normal;
+  font-size: 12px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.kickstarter-item div > span {
+  padding: 0;
+}
+
+.kickstarter-item .kickstarter-item-location {
+  margin-top: 5px;
+}
+
+.kickstarter-item .green-bar {
+  width: 100%;
+  height: 1.5%;
+  padding: 0;
+  margin: auto;
+  position: relative;
+}
+
+.kickstarter-item .green-bar-outer {
+  background: #D0CFD6;
+  padding: 0;
+  width: 93%;
+  height: 100%;
+  left: 3.5%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+}
+
+.kickstarter-item .green-bar-inner {
+  padding: 0;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 100px;
+  background: #0000FF;
+  position: absolute;
+}
+
+.kickstarter-item ul strong {
+  float: left;
+  font-size: 12px;
+}
+
+.kickstarter-item ul span {
+  float: left;
+  padding: 0;
+}
+
+.kickstarter-item ul > li {
+  padding: 0;
+  width: 30%;
+  float: left;
+}
+
+// CSS for big kickstarter item
+
+.project-main > div.kickstarter-item-big {
+	width: 100%;
+}
+
+.kickstarter-item-big {
+  width: 80%;
+  border: 1px solid #D0CFD6;
+  border-radius: 5px;
+  float: left;
+  margin-right: 1.5%;
+}
+
+.kickstarter-item-big img {
+	display: block;
+	float: left;
+  width: 55%;
+  max-height: 350px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.kickstarter-item-big > div.img {
+  float: left;
+}
+
+.kickstarter-item-big > .kickstarter-item-big-info {
+	float: left;
+	width: 43%;
+  margin-top: 20px;
+}
+
+.kickstarter-item-big-info div {
+  float: left;
+  width: 100%;
+  margin: auto;
+  padding: 0 10px 10px 10px;
+}
+
+.kickstarter-item-big div.project-title-info {
+	margin-top: 20px;
+}
+
+.kickstarter-item-big a {
+	color: #081245;
+  width: 100%;
+	display: inline;
+  font-size: 16px;
+	font-weight: bold;
+}
+
+.kickstarter-item-big a:hover {
+  color: #1E234B;
+}
+
+.kickstarter-item-big div > p,
+.kickstarter-item-big div > span,
+.kickstarter-item-big li > span {
+	float: left;
+	color: #081245;
+	font-family: helvetica;
+  font-weight: 200;
+  font-size: 14px;
+  padding-top: 10px;
+	padding-bottom: 10px;
+  width: 100%;
+}
+
+.kickstarter-item-big div > span {
+  padding: 0;
+}
+
+.kickstarter-item-big .kickstarter-item-location {
+  margin-top: 50px;
+}
+
+.kickstarter-item-big .green-bar {
+  width: 100%;
+  height: 8px;
+  padding: 0;
+  margin: auto;
+  position: relative;
+	margin-bottom: 10px;
+}
+
+.kickstarter-item-big .green-bar-outer {
+  background: #D0CFD6;
+  padding: 0;
+  width: 93%;
+  height: 100%;
+  left: 3.5%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+}
+
+.kickstarter-item-big .green-bar-inner {
+  padding: 0;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 100px;
+  background: #000FF;
+  position: absolute;
+}
+
+.kickstarter-item-big ul strong {
+  float: left;
+  font-size: 12px;
+}
+
+.kickstarter-item-big ul span {
+  float: left;
+  padding: 0;
+}
+
+.kickstarter-item-big ul > li {
+  padding: 0;
+  width: 30%;
+  float: left;
+}

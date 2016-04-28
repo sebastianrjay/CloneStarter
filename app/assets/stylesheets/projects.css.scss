@@ -1,0 +1,349 @@
+// Place all the styles related to the Projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.content {
+  width: 1000px;
+  margin: auto;
+}
+
+.content-title {
+  background: #F5F8F8;
+  padding: 50px 50px 0 50px;
+}
+
+.content-title h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.content-title p {
+  padding-top: 25px;
+  padding-bottom: 45px;
+  text-align: center;
+}
+
+.content-title a {
+  color: black;
+}
+
+.content-updates {
+  background: #F5F8F8;
+}
+
+.content-updates ul {
+  padding-left: 30px;
+  padding-bottom: 12px;
+}
+
+.content-updates ul > li {
+  float: left;
+  padding-right: 25px;
+}
+
+.content-updates ul ul > li {
+  float: right;
+}
+
+.content-updates li > a {
+  padding: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #6E7173
+}
+
+.content-updates li > a:hover {
+  color: #070D32;
+  border-bottom: 5px solid #0000FF;
+  cursor: pointer;
+}
+
+.content-main {
+  width: 1000px;
+  margin: auto;
+  padding-bottom: 100px;
+  background: #fff;
+  border: 1px solid #D0CFD6;
+  border-radius: 5px;
+}
+
+.content-main video {
+  padding: 30px 30px;
+}
+
+.project-image {
+  float: left;
+  position: relative;
+  width: 640px;
+  height: 550px;
+}
+
+.project-main-image {
+  padding: 30px;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+// .project-image:hover {
+//   cursor: pointer;
+// }
+//
+// .project-image:hover .video-overlay {
+//   background: #1CD866;
+// }
+//
+// .video-overlay:hover{
+//   cursor: pointer;
+//   background: #1CD866;
+// }
+
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -33px;
+  margin-left: -53px;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  z-index: 4;
+  padding: 20px 25px;
+  text-align: center;
+  border: 3px solid white;
+}
+
+.content-main > main {
+  float: left;
+  width: 660px;
+}
+
+main {
+}
+
+.content-main > main h1 {
+  color: #6E7173;
+  font-size: 36px;
+  padding-left: 30px;
+  padding-top: 70px;
+  position: relative;
+}
+
+.content-main > main h5 {
+  margin-top: 50px;
+  padding-left: 30px;
+  font-size: 22px;
+  font-style: helvetica;
+  color: #0B1906;
+}
+
+.content-main > main h3 {
+  padding-top: 40px;
+  padding-left: 30px;
+}
+
+.content-main > main p {
+  padding-left: 30px;
+  padding-top: 20px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.bottom-border {
+  position: absolute;
+  bottom: -27px;
+  width: 45px;
+  border-bottom: 3px solid #1CD866;
+}
+
+.content-main > div {
+  float: right;
+  width: 290px;
+  padding-top: 57px;
+}
+
+div > h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.buy-button {
+  margin-top: 25px;
+  width: 160px;
+  border-radius: 5px;
+  background: #0000FF;
+  padding: 20px 42px;
+  color: #fff;
+  font-size: 17px;
+  text-align: center;
+}
+
+.buy-button:hover {
+  background: #696969;
+  text-decoration: none;
+}
+
+.buy-button h6 {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.buy-button > p {
+  text-decoration: none;
+  color: #C0C0C0;
+  padding-top: 2px;
+  font-size: 12px;
+}
+
+.user-box {
+  margin-top: 20px;
+  margin-left: -20px;
+  background: #E1F3FD;
+  width: 286px;
+  height: 295px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.user-box > img {
+  padding: 20px;
+  float: left;
+}
+
+.user-box > h6 {
+  padding-top: 25px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.user-box > h5 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.user-box > a {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.user-box > p {
+  clear: both;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.user-box > div {
+  position: absolute;
+  bottom: 0;
+}
+
+.user-box > div > a {
+  font-size: 14px;
+  font-weight: bold;
+  background: #D5EEFD;
+  width: 78px;
+  float: left;
+  padding: 20px 32px;
+  border-top: 1px solid #7DBAE4;
+}
+
+.user-box > div > a:hover {
+  background: #E1F3FD;
+}
+
+.project-sidebar {
+  padding-top: 100px;
+  float: right;
+  padding-right: 45px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.reward-box {
+  margin-left: -20px;
+  width: 240px;
+  background: #F5F8F8;
+  padding: 22px 20px 30px 20px;
+  border-bottom: 1px solid #D0CFD6;
+  position: relative;
+}
+
+// .reward-box:hover {
+//   background: #C0C0C0;
+//   color: #19C35A;
+//   cursor: pointer;
+// }
+
+.reward-box:hover h3 {
+  visibility: visible;
+}
+
+.reward-box > h6 {
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.reward-box > h5 {
+  font-size: 13px;
+  font-weight: bold;
+  float: left;
+}
+
+.reward-box > h3 {
+  color: white;
+  position: absolute;
+  top: 90px;
+  font-size: 24px;
+}
+
+.reward-box > p {
+  font-size: 14px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+.reward-box pre {
+  font-weight: normal;
+  float: right;
+}
+
+.select-project-admin
+{
+  position: relative;
+  clear: both;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 2px dotted #D0CFD6;
+  border-radius: 10px;
+  width: 100%;
+  height: 100px;
+  color: #128BF8;
+  font-size: 14px;
+  font-weight: bold;
+  background: #FFFEFE;
+  cursor: pointer;
+}
+
+.select-project-admin:hover {
+  background: #E2F3FD;
+}
+
+.select-project-admin:hover p {
+  color: #1087F9;
+}
+
+.select-project-admin > p {
+  position: absolute;
+  color: black;
+  top: 50%;
+  margin-top: -8px;
+  left: 50%;
+  margin-left: -91px;
+}

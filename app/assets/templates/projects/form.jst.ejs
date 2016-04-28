@@ -1,0 +1,63 @@
+<div class="project-form-container">
+
+  <div id="new-project-header">
+    What is your cloning project?
+  </div><br>
+
+  <ul class="form-errors">
+  </ul>
+  <br><br>
+
+  <form class="project-form" role="form">
+
+    <div id="new-project-category">
+
+      I want to clone <div class="styled-select">
+
+        <select id="new-form-category-dropdown" name="project[category_id]">
+          <% categories.each(function(category) { %>
+            <option value="<%= category.id %>"><%= category.escape('name') %></option>
+          <% }); %>
+        </select>
+
+      </div><br><br> and the project has the following info...
+
+      <br>
+    </div>
+    <br>
+
+    <input type='text' name='project[title]' class="form-input"
+    value='<%= project.escape('title') %>' placeholder="Title">
+    <br><br>
+    <input type='text' name='project[city]' class="form-input"
+    value='<%= project.escape('city') %>' placeholder="Location City">
+    <br><br><br>
+    <input type='text' name='project[main_image_url]' class="form-input"
+    value='<%= project.escape('main_image_url') %>'
+    placeholder="Main Image URL">
+    <br><br>
+    <input type='text' name='project[secondary_image_url]' class="form-input"
+    value='<%= project.escape('secondary_image_url') %>'
+    placeholder="Secondary Image URL (optional)">
+    <br><br><br>
+    <textarea name='project[description]' rows="10" cols="50"
+    placeholder="Description"><%= project.escape('description') %></textarea>
+    <br><br>
+
+    <input type='text' name='project[fund_goal]' class="form-input"
+    value='<%= project.escape('fund_goal') %>' placeholder="Fundraising Target ($)">
+    <br><br><br>
+    <label class="form-label" for='end_date'>End Date</label><br>
+    <input type='date' placeholder="End Date" name='project[end_date]'
+    value=''><br>
+    <br><br>
+    <textarea name='project[summary]' rows="5" cols="50"
+    placeholder ="Summary (160 characters or less)"><%= project.escape('summary') %></textarea>
+    <br><br><br>
+    <input type="submit" value="Submit Project">
+
+  </form>
+
+  <div class='basic-button back'>Cancel</div>
+</div>
+<br><br>

@@ -1,0 +1,27 @@
+<div class="log-in-background">
+
+  <ul class="form-errors">
+  </ul>
+
+	<div class="log-in">
+  	<h1><b>Add a Reward for Pledgers</b></h1>
+    <form role="form">
+      <label for="min_amt">
+  	    <input type="text" name="reward[min_amt]" value='<%= reward.escape('min_amt') %>'
+        placeholder="Minimum Contribution Amount ($)">
+  	  </label>
+      <br><br>
+      <label for='est_delivery'>Estimated Delivery Date:>
+        <input type='date' name='reward[est_delivery]' value=''>
+      </label>
+      <br>
+      <label for='summary'>
+        <textarea name='reward[summary]' rows="6" cols="20"
+        placeholder="Summary"><%= reward.escape('summary') %></textarea>
+      </label>
+      <br>
+  	  <b><input type="submit" value="Create Reward"></b>
+  	</form>
+    <div class="basic-button back">Cancel</div>
+	</div>
+</div>

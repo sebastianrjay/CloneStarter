@@ -1,0 +1,13 @@
+<% var commenters = {} %>
+<div class="project-comments-container">
+  <% comments.forEach ( function(comment){ %>
+    <div class="project-comment">
+      <% commenters[comment.username] = true %>
+      <h6><%= comment.username %></h6>
+      <p><%= comment.body %><p>
+    </div>
+  <% }); %>
+  <% if(!CloneStarter.loggedIn || !commenters[CloneStarter.currentUser.username]) { %>
+    <br><h5 style="font-size: 18px">Only backers can post comments.</h5><br>
+  <% } %>
+</div>

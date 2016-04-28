@@ -1,0 +1,17 @@
+<div id="content"></div>
+<script type="text/javascript" charset="utf-8">
+$(CloneStarter.initialize);
+<% if logged_in? %>
+  $(function () {
+    CloneStarter.loggedIn = true;
+    CloneStarter.currentUser = {
+      id: <%= current_user.id %>,
+      username: "<%= current_user.username %>"
+    };
+  })
+<% else %>
+  $(function () {
+    CloneStarter.loggedIn = false;
+  });
+<% end %>
+</script>

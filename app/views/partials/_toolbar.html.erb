@@ -1,0 +1,24 @@
+<header>
+	<nav class="toolbar">
+		<a href="/"><p id="clone">Clone</p><p id="starter">Starter</p></a>
+		<div>
+	    <a href="#/categories" class="toolbar-link">Categories</a>
+	    <% if logged_in? %>
+	    <a href="#/projects/new" class="toolbar-link"><b>Start Cloning Today!</b></a>
+	    <% end %>
+		</div>
+	  <div class="right-nav group">
+	    <% if logged_in? %>
+	    <a id="welcome">Welcome back, <%= current_user.username %>.</a>
+			  <form class="toolbar-link" action="<%= session_url %>" method="POST">
+	        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+			    <input type="hidden" name="_method" value="DELETE">
+			    <input type="submit" value="Log Out">
+			  </form>
+	    <% else %>
+	    <a href="/session/new" class="toolbar-link">Log In</a>
+	    <a href="/users/new" class="toolbar-link">Sign Up</a>
+	    <% end %>
+	  </div>
+	</nav>
+</header>

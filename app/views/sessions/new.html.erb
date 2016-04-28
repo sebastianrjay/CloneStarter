@@ -1,0 +1,25 @@
+<div class="log-in-background">
+	<div class="log-in">
+	<h1><b>Log In</b></h1>
+  <form method="post" action="<%= session_url %>" role="form">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <label for="session_name">
+      <input type="text" name="user[username]"
+        id="session_email" placeholder="Username">
+	  </label>
+	  <label for="session_password">
+	    <input type="password" name="user[password]" id="session_password"
+        placeholder="Password">
+	  </label>
+    <br>
+	  <b><input type="submit" value="Log In"></b>
+	</form>
+  <form method="post" action="<%= session_url %>" role="form">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+    <input type="hidden" name="user[username]" value="Guest">
+    <input type="hidden" name="user[password]" value="guesstheguest">
+    <b><input type="submit" value="Guest Login"></b>
+  </form>
+	</div>
+</div>

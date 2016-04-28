@@ -1,0 +1,11 @@
+<% if(rewards.length > 0) { %>
+  <h6 style="font-size: 30px">Rewards</h6>
+  <% rewards.each(function (reward) { %>
+    <div class="reward-box">
+      <h6>Pledge $<%= reward.escape('min_amt') %> or more</h6>
+      <p><%= reward.escape('summary') %></p>
+      <h5>Estimated delivery: </h5>
+      <p><%= reward.escape('est_delivery') %></p>
+    </div>
+  <% }); %>
+<% } %>

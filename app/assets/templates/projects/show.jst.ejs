@@ -1,0 +1,67 @@
+<div class="content">
+  <ul class="form-errors">
+  </ul>
+  <br>
+  <section class="content-title">
+    <h1><%= project.escape('title') %></h1>
+    <p>by <%= project.escape('starter_name') %></p>
+  </section>
+
+  <section class="content-updates">
+    <ul class="group">
+      <li><a class="show-story">Campaign</a></li>
+      <li><a class="show-backers">Backers <strong class="badge"><%= project.escape('num_backers') %></strong></a></li>
+      <li><a class="show-comments">Comments <strong class="badge"><%= project.escape('num_comments') %></strong></a></li>
+      <ul>
+        <li><a><%= project.escape('city') %></a></li>
+      </ul>
+    </ul>
+  </section>
+
+  <section class="content-main group">
+    <main>
+      <div class="project-image">
+        <img class='project-main-image' src="<%= project.escape('main_image_url') %>" class="project-img">
+      </div>
+
+      <h5><%= project.escape('summary') %></h5>
+      <br><br><br><br><br>
+
+      <section class="project-main">
+      </section>
+    </main>
+
+    <div>
+      <h1><%= project.escape('num_backers') %></h1>
+      <p>backers</p>
+      <h1>$<%= project.escape('pledge_total') %></h1>
+      <p>pledged of $<%= project.escape('fund_goal') %> goal</p>
+      <h1><%= project.escape('days_left') %></h1>
+      <p>days to go</p>
+
+      <% if(CloneStarter.loggedIn){ %>
+        <a href="#/projects/<%= project.id %>/pledges/new">
+          <div class="buy-button">
+            <h6>Back This Project</h6>
+            <br>
+            <p>$1 minimum pledge</p>
+          </div>
+        </a>
+        <% if(CloneStarter.currentUser.id === project.get('starter_id')) { %>
+          <a href="#/projects/<%= project.id %>/rewards/new">
+            <div class="buy-button">
+              <h6>Add Reward</h6>
+            </div>
+          </a>
+        <% } %>
+      <% } %>
+
+    </div>
+
+    <section class="project-sidebar">
+    </section>
+
+  </section>
+
+  <br><center><div class='basic-button back'>Home</div></center><br>
+</div>

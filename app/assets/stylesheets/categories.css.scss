@@ -1,0 +1,103 @@
+// Place all the styles related to the Categories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.category-back-button {
+	float: left;
+	position: relative;
+}
+
+header.category-header {
+	padding-top: 25px;
+	width: 100%;
+}
+
+header.category-header > div {
+	padding: 70px;
+	width: 75%;
+	margin: auto;
+}
+
+header.category-header h1 {
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: 200;
+	font-family: helvetica-neue-light;
+	position: relative;
+	margin-left: 35px;
+}
+
+// Make triangle with CSS
+header.category-header h1:after {
+	content: "";
+	display: block;
+	position: absolute;
+
+	width: 0;
+	height: 0;
+	top: 0;
+	left: 0;
+	margin-top: 10px;
+	margin-left: -30px;
+
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	background: transparent;
+}
+
+header.category-header ul {
+	margin-top: 50px;
+	width: 100%;
+	height: 100%;
+}
+
+header.category-header ul > a {
+	font-size: 12px;
+	font-weight: bold;
+	float: left;
+	padding: 8px 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+
+// .category-show-header {
+//   color: #00FFFF;
+// }
+//
+// .well.category-container {
+//   min-height: 100px;
+//   background-color: #808080;
+//
+//   font-size: 40px;
+//   float: left;
+//   min-width: 20%;
+//   margin-right: 30px;
+// }
+//
+// .category-contents {
+//   line-height: 60px;
+//
+//   text-align: center;
+// }
+//
+// .category-container {
+//   -webkit-border-radius: 28;
+//   -moz-border-radius: 28;
+//   border-radius: 28px;
+//   // font-family: Arial;
+//   color: #00FFFF;
+//   font-size: 20px;
+//   padding: 10px 20px 10px 20px;
+//   text-decoration: none;
+// }
+//
+// .category-container:hover {
+//   background: #3cb0fd;
+//   background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+//   background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+//   background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+//   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+//   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+//   text-decoration: none;
+// }

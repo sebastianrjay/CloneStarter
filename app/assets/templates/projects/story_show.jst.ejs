@@ -1,0 +1,11 @@
+<h6 style=" padding-left: 20px; font-size: 30px;">About this project</h6>
+
+<% if(project.escape('secondary_image_url')) { %>
+  <br>
+  <br>
+  <div class="project-image">
+    <img class='project-main-image' src="<%= project.escape('secondary_image_url') %>" class="project-img">
+  </div>
+<% } %>
+
+<p><%= project.escape('description') %></p>

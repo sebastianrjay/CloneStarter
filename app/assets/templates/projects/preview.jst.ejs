@@ -1,0 +1,40 @@
+<div class="kickstarter-item group">
+  <div class="img">
+    <img src="<%= project.escape('main_image_url') %>">
+  </div>
+
+  <div>
+    <a href="#/projects/<%= project.id %>"><%= project.escape('title') %></a>
+    <p>by <%= project.escape('starter_name') %></p>
+    <p><%= project.escape('summary') %></p>
+  </div>
+
+  <div class="kickstarter-item-location">
+    <span><%= project.escape('city') %></span>
+  </div>
+
+  <div class="green-bar group">
+    <div class="green-bar-outer">
+      <div class="green-bar-inner" style="width: <%= project.escape('pct_funded') %>%"></div>
+    </div>
+  </div>
+
+  <div>
+    <ul class="group">
+      <li class="group">
+        <strong><%= project.escape('pct_funded') %>%</strong>
+        <span>funded</span>
+      </li>
+
+      <li>
+        <strong>$<%= project.escape('pledge_total') %></strong>
+        <span>pledged</span>
+      </li>
+
+      <li>
+        <strong><%= project.escape('days_left') %></strong>
+        <span>days to go</span>
+      </li>
+    </ul>
+  </div>
+</div>
