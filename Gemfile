@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
+ruby '2.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0.rc1'
@@ -28,7 +28,7 @@ gem 'thin'
 
 gem 'bootstrap-sass'
 
-gem 'rails_12factor', '0.0.2'
+gem 'rails_12factor'
 
 gem 'backbone-on-rails'
 # Use jquery as the JavaScript library

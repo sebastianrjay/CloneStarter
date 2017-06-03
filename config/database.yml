@@ -9,11 +9,14 @@
 #   pool: 5
 #   timeout: 5000
 
-development:
+default: &default
   adapter: postgresql
-  database: clone_starter_dev
   pool: 5
   timeout: 5000
+
+development:
+  <<: *default
+  database: clone_starter_dev
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
